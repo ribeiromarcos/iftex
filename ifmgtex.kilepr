@@ -186,10 +186,10 @@ order=-1
 
 [item:capitulos/introducao.tex]
 archive=true
-column=55
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=5
+line=6
 mode=LaTeX
 open=false
 order=-1
@@ -337,8 +337,8 @@ JumpList=
 ViMarks=.,16,357,[,16,357,],16,363
 
 [view-settings,view=0,item:capitulos/introducao.tex]
-CursorColumn=55
-CursorLine=5
+CursorColumn=0
+CursorLine=6
 JumpList=
 ViMarks=.,5,135,[,5,135,],5,135
 
