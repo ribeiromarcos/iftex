@@ -1,0 +1,88 @@
+Em documentos acadêmicos podem existir citações diretas e citações indiretas. As citações indiretas são feitas quando se reescreve uma referência consultada. Nas citações indiretas há duas formatações possíveis dependendo de como ocorre a citação no texto. Quando o autor é mencionado explicitamente na sentença deve ser usado o comando \comando{citet\{\}}, nas demais situações é usado o comando \comando{cite\{\}}. A Figura \ref{figura:citacao_indireta_explicita} mostra um exemplo com o comando \comando{citet\{\}}.
+
+\begin{figure}[htb]
+\hrulefill
+
+\begin{verbatim}
+Segundo \citet{castro:2016:manual}, o trabalho de conclusão de curso
+deve seguir as normas da ABNT.
+\end{verbatim}
+
+\hrulefill
+
+Segundo \citet{castro:2016:manual}, o trabalho de conclusão de curso deve seguir as normas da ABNT.
+
+\hrulefill
+
+\caption{Exemplo de citação indireta explícita} \label{figura:citacao_indireta_explicita}
+\end{figure}
+
+Para especificar a página consultada na referência é preciso acrescentá-la entre colchetes com os comandos \comando{cite[página]\{\}} ou \comando{citet[página]\{\}}. Na Figura \ref{figura:citacao_indireta_pagina} é mostrado um exemplo de citação com página específica.
+
+\begin{figure}[htb]
+\hrulefill
+
+\begin{verbatim}
+A folha de aprovação é um elemento obrigatório no trabalho de conclusão
+de curso \cite[p.~22]{castro:2016:manual}.
+\end{verbatim}
+
+\hrulefill
+
+A folha de aprovação é um elemento obrigatório no trabalho de conclusão de curso \cite[p.~22]{castro:2016:manual}.
+
+\hrulefill
+
+\caption{Exemplo de citação indireta não explícita} \label{figura:citacao_indireta_pagina}
+\end{figure}
+
+As citações diretas acontecem quando o texto de uma referência é transcrito literalmente. As citações diretas são curtas (até três linhas) são inseridas no texto entre aspas duplas. Como no exemplo mostrado na Figura \ref{figura:citacao_direta_curta}.
+
+\begin{figure}[htb]
+\hrulefill
+
+\begin{verbatim}
+``A tabela deve ser colocada em posição vertical, para facilitar a
+leitura dos dados'' \cite[p.~26]{castro:2016:manual}.
+\end{verbatim}
+
+\hrulefill
+
+``A tabela deve ser colocada em posição vertical, para facilitar a leitura dos dados'' \cite[p.~25]{castro:2016:manual}.
+
+\hrulefill
+
+\caption{Exemplo de citação direta curta}
+\label{figura:citacao_direta_curta}
+\end{figure}
+
+As citações longas (com mais de 3 linhas) podem ser inseridas com o ambiente \comando{begin\{citacao\}} como mostra a Figura \ref{figura:citacao_direta_longa}.
+
+\begin{figure}[htb]
+\hrulefill
+
+\begin{verbatim}
+\begin{citacao}
+A tabela deve ser colocada em posição vertical, para facilitar a
+leitura dos dados.
+No caso em que isso seja impossível, deve ser colocada em posição
+horizontal, com o título voltado para a margem esquerda da folha.
+Fontes e notas devem aparecer na parte inferior da
+tabela em tamanho 11 \cite[p.~25]{castro:2016:manual}.
+\end{citacao}
+\end{verbatim}
+
+\hrulefill
+
+\begin{citacao}
+A tabela deve ser colocada em posição vertical, para facilitar a leitura dos dados. No
+caso em que isso seja impossível, deve ser colocada em posição horizontal, com o título
+voltado para a margem esquerda da folha. Fontes e notas devem aparecer na parte inferior da
+tabela em tamanho 11 \cite[p.~25]{castro:2016:manual}.
+\end{citacao}
+
+\hrulefill
+
+\caption{Exemplo de citação direta longa}
+\label{figura:citacao_direta_longa}
+\end{figure}

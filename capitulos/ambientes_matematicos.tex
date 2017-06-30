@@ -1,0 +1,24 @@
+A classe {IFMG\TeX} provê os seguintes ambientes matemáticos:
+\begin{itemize}
+ \item Teoremas (\comando{begin\{teorema\}[\ ]} ... \comando{begin\{teorema\}});
+ \item Proposição (\comando{begin\{proposicao\}[\ ]} ... \comando{begin\{proposicao\}});
+ \item Lema (\comando{begin\{lema\}[\ ]} ... \comando{begin\{lema\}});
+ \item Corolário (\comando{begin\{corolario\}[\ ]} ... \comando{begin\{corolario\}});
+ \item Exemplo (\comando{begin\{exemplo\}[\ ]} ... \comando{begin\{exemplo\}});
+ \item Observação (\comando{begin\{observacao\}[\ ]} ... \comando{begin\{observacao\}});
+ \item Definição (\comando{begin\{definicao\}[\ ]} ... \comando{begin\{definicao\}});
+ \item demonstracao (\comando{begin\{demonstracao\}[\ ]} ... \comando{begin\{demonstracao\}}).
+\end{itemize}
+
+Abaixo temos um exemplo de proposição com sua demonstração:
+\begin{proposicao}
+ Sejam $a$ e $b$ reais, tais que $0<a<b$. Então $a^2<b^2$.
+\end{proposicao}
+\begin{demonstracao}
+ Pela hipótese concluímos que $(b+a)>0$ e $(b-a)>0$.
+
+Como $b^2-a^2=(b+a)(b-a)$ concluímos que $b^2-a^2>0$, ou seja, $a^2<b^2$.
+\end{demonstracao}
+
+Neste documento tratamos brevemente apenas dos ambientes mencionados anteriormente. Contudo, para escrever expressões matemáticas complexas é preciso estudar uma documentações mais específicas\footnote{\url{https://en.wikibooks.org/wiki/LaTeX/Mathematics}}\footnote{\url{https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics}}.
+Alguns dos ambientes matemáticos da classe {IFMG\TeX} podem ser usados também para outras finalidades como exemplos e definições.

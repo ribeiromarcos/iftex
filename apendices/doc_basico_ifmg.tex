@@ -1,0 +1,92 @@
+\begin{Verbatim}[frame=single, fontsize=\scriptsize]
+\documentclass[english,brazil]{ifmgtex} % Documento utilizando a classe ifmgtex
+
+\titulo{Título do trabalho}         % Título
+\autor{Nome do Autor}               % Autor
+\instituicao{Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - Campus
+Bambuí}                      % Instituição
+\local{Bambuí - MG}                 % Local
+\data{1}{junho}{2017}               % Data da defesa
+
+\unidade{Campus Bambuí}             % Unidade do IFMG
+\tipotrabalho{monografia}           % monografia, dissertacao ou tese
+\curso{Bacharel}{Engenharia de Computação}  % Título obtido e Curso
+
+\areaconcentracao{Processamento de Textos}   % Área de concentração
+\orientador{Nome do Orientador}              % Orientador
+\coorientador[Coorientadora]{Nome da Coorientadora}     % Coorientadora
+\coorientadorinstituicao{Instituição da Coorientadora}
+
+% Membros da banca examinadora (além do orientador e coorientador)
+\membrobanca{Fulando de Tal}{Instituição do Fulano de Tal}
+\membrobanca{Ciclano de Tal}{Instituição do Ciclano de Tal}
+
+\inserirfichacatalografica{ficha_catalografica} % Ficha catalográfica
+\inserirfolhaaprovacao{}                        % Folha de aprovação
+
+\inserirdedicatoria{
+  Texto da dedicatória.
+}
+
+\inseriragradecimentos{
+  Texto dos agradecimentos.
+}
+
+\inserirepigrafe{
+  ``As invenções são, sobretudo, o resultado de um trabalho teimoso.''\\
+  (Santos Dumont)
+}
+
+\resumo{
+  Texto do resumo.
+}
+\palavraschave{Palavras. Chave;}
+
+\abstract{
+  Texto do abstract.
+}
+\keywords{English. Keywords.}
+
+\inserirlistafiguras                     % Lista de Figuras
+\inserirlistaquadros                     % Lista de Quadros
+\inserirlistatabelas                     % Lista de Tabelas
+\inserirlistaalgoritmos                  % Lista de Algoritmos
+\inserirlistacodigos                     % Lista de Códigos
+\inserirlistasiglas{\input{siglas}}      % Lista de Siglas
+\inserirlistasimbolos{\input{simbolos}}  % Lista de Símbolos
+
+% Início do documento
+\begin{document}
+
+\maketitle
+
+\chapter{Introdução}
+
+Capítulo de Introdução
+
+\chapter{Desenvolvimento}
+
+Capítulo de Desenvolvimento
+
+\chapter{Conclusão}
+
+Capítulo de conclusão
+
+\postextual
+
+\bibliography{referencias}
+
+\apendices\partapendices
+
+\chapter{Título do Apêndice}
+
+Conteúdo do apêndice
+
+\anexos\partanexos
+
+\chapter{Título do Anexo}
+
+Conteúdo do anexo.
+
+\end{document}
+\end{Verbatim}

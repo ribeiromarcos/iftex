@@ -1,0 +1,69 @@
+A configuração de diversas opções e principalmente dos elementos pré-textuais é realizada com comandos específicos inseridos antes do comando \comando{begin\{document\}}. As informações do documento são configuradas através dos comandos:
+\begin{description}
+\item[\comando{titulo\{T\}}:] Título do trabalho, substitua T pelo título do trabalho;
+% ------------------------------------------------------------------------
+\item[\comando{autor\{N\}}:] Nome do autor do trabalho;
+% ------------------------------------------------------------------------
+\item[\comando{local\{L\}}:] Local do trabalho;
+% ------------------------------------------------------------------------
+\item[\comando{data\{dia\}\{mês (por extenso)\}\{ano\}}:] Configuração da data do documento que aparecerá na folha de aprovação;
+% ------------------------------------------------------------------------
+\item[\comando{unidade\{U\}}:] Nome da unidade do IFMG, por exemplo, Campus Bambuí;
+% ------------------------------------------------------------------------
+\item[\comando{tipotrabalho\{T\}}:] Tipo de trabalho, os possíveis tipos de trabalhos são: monografia, dissertacao ou tese;
+% % ------------------------------------------------------------------------
+\item[\comando{curso\{NC\}\{TC\}}:] Dados do curso, nome do curso(NC) e grau obtido com o curso(GC).
+Exemplo: \comando{curso\{Bacharel\}\{Engenharia de Computação\}\{Bacharel\}};
+% ------------------------------------------------------------------------
+\item[\comando{areaconcentracao\{T\}}:] Área de concentração do trabalho;
+% ------------------------------------------------------------------------
+\item[\comando{orientador\{O\}}:] Nome do professor orientador do trabalho.
+Caso seja uma orientadora pode ser usado o comando \comando{orientador[Orientadora]\{O\}};
+% ------------------------------------------------------------------------
+\item[\comando{coorientador\{C\}}:] Nome do coorientador do trabalho.
+Caso seja uma coorientadora pode ser usado um comando análogo a definição de orientadora como \comando{coorientador[Coorientadora]\{C\}}.
+No caso de coorientadores de outras instituições, é preciso usar  comando \comando{coorientadorinstituicao\{I\}}, onde I é a instituição do coorientador;
+% ------------------------------------------------------------------------
+\item[Membros da banca avaliadora:] Os membros da banca avaliadora constarão na folha de aprovação juntamente com os nomes do orientador e do coorientador.
+A definição dos membros é feita com o comando \comando{membrobanca\{N\}\{I\}}, onde N é o nome do membro e I é sua instituição.
+é preciso usar um comando para cada membro;
+% ------------------------------------------------------------------------
+\item[\comando{inserirfichacatalografica\{F\}}:] Insere a ficha catalográfica (elemento obrigatório) contida no arquivo F.
+Entre em contato com a biblioteca para obter a ficha catalográfica em arquivo PDF.
+Essa ficha só será inserida no documento após a sua defesa;
+% ------------------------------------------------------------------------
+\item[\comando{inserirfolhaaprovacao\{F\}}:] Insere a folha de aprovação (elemento obrigatório).
+O comando \comando{inserirfolhaaprovacao\{\}} gera a folha de aprovação para ser assinada.
+Após a defesa esta folha deve ser digitalizada para um arquivo PDF e inserida pelo comando \inserirfolhaaprovacao{arquivo};
+% ------------------------------------------------------------------------
+\item[Dedicatória, Agradecimentos e Epígrafe:] Os elementos pré-textuais opcionais dedicatória, agradecimentos e epígrafe são inseridos com os comandos \comando{inserirdedicatoria\{T\}}, \comando{inseriragradecimentos\{T\}} e \comando{inserirepigrafe\{T\}}, respectivamente.
+é preciso usar um comando para cada membro;
+% ------------------------------------------------------------------------
+\item[Resumo e \textit{Abstract}:] O resumo é incluído com o comando \comando{resumo\{T\}}. Este comando deve ser imediatamente seguido pelo comando \comando{palavraschave\{P\}} para definição das palavras chaves, sendo que P são as palavras chaves iniciando com letras maiúsculas e separadas por pontos. O \textit{Abstract} é configurado de forma análoga com os comandos \comando{abstract\{T\}} e \comando{keywords\{K\}}.
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistafiguras}:] Insere a lista de figuras;
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistaquadros}:] Insere a lista de quadros;
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistatabelas}:] Insere a lista de tabelas;
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistaalgoritmos}:] Insere a lista de algoritmos;
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistacodigos}:] Insere a lista de códigos;
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistasiglas\{L\}}:] Insere a lista de siglas. O parâmetro L é a própria lista de siglas definida em um ambiente \textit{itemize} como mostrado no Código \ref{codigo:lista_siglas};
+% ------------------------------------------------------------------------
+\item[\comando{inserirlistasimbolos\{L\}}:] Insere a lista de siglas. O parâmetro L é a definição da lista de símbolos de forma análoga a definição da lista de siglas.
+\end{description}
+
+\begin{codigo}[!htb]
+\begin{Verbatim}
+\begin{itemize}[]
+\item[ABNT] - Associação Brasileira de Normas Técnicas
+\item[IFMG] - Instituto Federal Minas Gerais
+\item[SQL] - \textit{Structured Query Language}
+\item[TCC] - Trabalho de conclusão de curso
+\end{itemize}
+\end{Verbatim}
+\caption{Lista de siglas} \label{codigo:lista_siglas}
+\end{codigo}

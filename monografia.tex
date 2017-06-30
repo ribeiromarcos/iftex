@@ -1,0 +1,135 @@
+\documentclass[english,brazil]{ifmgtex}
+
+\include{config}
+
+% ------------------------------------------------------------------------
+% Configurações do Documento
+% ------------------------------------------------------------------------
+\titulo{IFMG\TeX: Classe {\LaTeX} para Trabalhos Acadêmicos do IFMG}
+\autor{Marcos Roberto Ribeiro}
+\local{Bambuí - MG}
+\data{1}{janeiro}{2017}
+
+\unidade{Campus Bambuí}
+% Os possíveis tipos de trabalhos são: monografia, dissertacao ou tese
+\tipotrabalho{monografia}
+\curso{Bacharel}{Engenharia de Computação}
+
+\areaconcentracao{Processamento de Textos}
+% Orientação
+\orientador{Nome do Orientador}
+\coorientador[Coorientadora]{Nome da Coorientadora}
+% Caso o coorientador seja de outra instituição
+\coorientadorinstituicao{Instituição da Coorientadora}
+
+% Membros da banca examinadora (além do orientador e coorientador)
+\membrobanca{Fulando de Tal}{Instituição do Fulano de Tal}
+\membrobanca{Ciclano de Tal}{Instituição do Ciclano de Tal}
+
+% ------------------------------------------------------------------------
+% Ficha catalográfica (Obrigatória)
+% ------------------------------------------------------------------------
+% Caso o comando \fichacatalografica seja definido, a ficha catalográfica
+% será inserida no verso da folha de rosto.
+% Entre em contato com a biblioteca para obter a ficha catalográfica em
+% arquivo PDF. Essa ficha só será inserida no documento após a sua defesa.
+\inserirfichacatalografica{ficha_catalografica}
+
+% ------------------------------------------------------------------------
+% Folha de aprovação (Obrigatória)
+% ------------------------------------------------------------------------
+% O comando \inserirfolhaaprovacao{} gera a folha de aprovação para ser
+% assinada. Após a defesa esta folha deve ser digitalizada em um arquivo
+% PDF e inserida pelo comando \inserirfolhaaprovacao{arquivo}
+\inserirfolhaaprovacao{}
+
+% Dedicatória (Opcional)
+\inserirdedicatoria{
+À minha esposa e ao meu filho.
+
+Aos meus pais e à minha irmã.
+}
+
+% Agradecimentos (Opcional)
+\inseriragradecimentos{
+Agradeço a todos que contribuíram para a realização deste trabalho.
+}
+
+% Epígrafe (Opcional)
+\inserirepigrafe{
+    ``As invenções são, sobretudo, o resultado de um trabalho teimoso.''\\
+    (Santos Dumont)
+}
+
+\include{resumo_abstract}                % Resumo e Abstract (Obrigatórios)
+\inserirlistafiguras                     % Lista de Figuras (Opcional)
+\inserirlistaquadros                     % Lista de Quadros (Opcional)
+\inserirlistatabelas                     % Lista de Tabelas (Opcional)
+\inserirlistaalgoritmos                  % Lista de Algoritmos (Opcional)
+\inserirlistacodigos                     % Lista de Códigos (Opcional)
+\inserirlistasiglas{\input{siglas}}      % Lista de Siglas (Opcional)
+\inserirlistasimbolos{\input{simbolos}}  % Lista de Símbolos (Opcional)
+
+\begin{document}
+
+% -----------------------------------------------------------------------------
+% Gera elementos pré-textuais
+% -----------------------------------------------------------------------------
+\maketitle
+
+% -----------------------------------------------------------------------------
+% Capítulo: Introdução
+% -----------------------------------------------------------------------------
+\chapter{Introdução} \label{cap:introducao}
+
+\input{capitulos/introducao}
+
+\chapter{Configuração dos Elementos Pré-Textuais}
+
+\input{capitulos/configuracao_pre}
+
+\chapter{Corpos Flutuantes}
+
+\input{capitulos/corpos_flutuantes}
+
+\chapter{Ambientes Matemáticos}
+
+\input{capitulos/ambientes_matematicos}
+
+\chapter{Ferramentas Úteis} \label{capitulo:ferramentas_uteis}
+
+\input{capitulos/ferramentas_uteis}
+
+\chapter{Citações e Referências}
+
+\input{capitulos/citacoes_referencias}
+
+% -----------------------------------------------------------------------------
+% Elementos pós-textuais
+% -----------------------------------------------------------------------------
+\postextual
+
+% -----------------------------------------------------------------------------
+% Referências bibliográficas
+% -----------------------------------------------------------------------------
+\bibliography{referencias}
+
+% -----------------------------------------------------------------------------
+% Apêndices
+% -----------------------------------------------------------------------------
+\apendices\partapendices
+
+\chapter{Documento Básico Usando a Classe {IFMG\TeX}}
+
+\input{apendices/doc_basico_ifmg}
+
+% -----------------------------------------------------------------------------
+% Anexos
+% -----------------------------------------------------------------------------
+\anexos\partanexos
+
+\chapter{Páginas Interessantes na Internet} \label{capitulo:paginas_interessantes}
+
+\input{anexos/paginas_interessantes}
+
+\end{document}
