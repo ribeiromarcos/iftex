@@ -10,7 +10,7 @@
 % =============================================================================
 % Herança da classe `abntex2' e inclusão das opções padrões
 % =============================================================================
-\LoadClass[12pt,twoside,openright,a4paper]{abntex2}
+\LoadClass[12pt,a4paper]{abntex2}
 
 % =============================================================================
 % Pacotes Usados
@@ -382,6 +382,7 @@
 % Folha de Rosto
 % -----------------------------------------------------------------------------
 \renewcommand{\folhaderostocontent}{%
+  \setcounter{page}{1}%
   \begin{center}%
     \vfill%
     {\large\textbf{\imprimirautor}}%
@@ -409,9 +410,11 @@
   \ifthenelse{\not\equal{\arquivoficha}{}}%
   {%
     \imprimirfolhaderosto*{}%
-    \begin{fichacatalografica}%
-      \includepdf[pages={1}]{\arquivoficha}%
-    \end{fichacatalografica}%
+    \if@twoside{%
+      \begin{fichacatalografica}%
+        \includepdf[pages={1}]{\arquivoficha}%
+      \end{fichacatalografica}%
+    }\fi%
   }%
   {%
     \imprimirfolhaderosto{}%
