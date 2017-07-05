@@ -7,11 +7,9 @@ Na Seção \ref{secao:figuras} é mostrado como inserir figuras, a Seção \ref{
 
 A inserção de figuras é realizada normalmente através do comando \comando{begin\{figure\}}. A Figura \ref{figura:logomarca_ifmg} exibe a logomarca do IFMG. De acordo com as normas ABNT a lista de figuras é um elemento opcional do documento, para incluí-la é preciso inserir o comando \comando{inserirlistafiguras} antes do início do documento.
 
-\begin{figure}[htb]
- \centering
+\begin{figure}[htb]  \centering
  \iflogo
- \caption{Logomarca do IFMG}
- \label{figura:logomarca_ifmg}
+ \caption{Logomarca do IFMG} \label{figura:logomarca_ifmg}
 \end{figure}
 
 \section{Tabelas e Quadros}
@@ -23,10 +21,8 @@ Como exemplos foram inseridas a Tabela \ref{tabela:lista_produtos} que exibe uma
 
  A lista de tabelas também é um elemento opcional que pode ser incluída com o comando \comando{inserirlistatabelas} antes do início do documento. O mesmo acontece com a lista de quadros que pode ser incluída com o comando \comando{inserirlistaquadros}.
 
-\begin{table}[htb]
-\centering
-\caption{Lista de produtos}
-\label{tabela:lista_produtos}
+\begin{table}[htb] \centering
+\caption{Lista de produtos} \label{tabela:lista_produtos}
 \begin{tabularx}{\textwidth}{X|l|r|r|r} \hline
 Produto      & Unidade & Preço (R\$) & Quantidade & Total (R\$) \\ \hline
 Arroz        & Kg      & 2,00        & 550        & 1.100,00    \\
@@ -35,8 +31,7 @@ Açucar       & Kg      & 3,00        & 100        & 300,00      \\ \hline
 \end{tabularx}
 \end{table}
 
-\begin{table}[htb]
-\centering
+\begin{table}[htb] \centering
 \caption{População dos países da América do Sul} \label{tabela:populacao_america_sul}
 \begin{tabular}{r|l|r}        \hline
 Código  & País            & População   \\ \hline
@@ -51,14 +46,10 @@ Código  & País            & População   \\ \hline
 9       & Venezuela       &  28.121.700 \\
 10      & Chile           &  16.803.000 \\ \hline
 \end{tabular}
-
-\begin{small}
-Fonte: \citeonline{wikipedia:2011:america_sul}.
-\end{small}
+\legend{Fonte: \citeonline{wikipedia:2011:america_sul}.}
 \end{table}
 
-\begin{quadro}[htb]
-\centering
+\begin{quadro}[htb] \centering
 \begin{tabular}{|l|l|r|}        \hline
 Editor     & Multiplataforma & Específico para Latex \\ \hline
 Kwriter    & Sim             & Não                   \\
@@ -66,8 +57,7 @@ Texmaker   & Sim             & Sim                   \\
 Kile       & Sim             & Sim                   \\
 Geany      & Sim             & Não                   \\ \hline
 \end{tabular}
-\caption{Editores de Texto Livres}
-\label{quadro:editores_texto_livres}
+\caption{Editores de Texto Livres} \label{quadro:editores_texto_livres}
 \end{quadro}
 
 \section{Algoritmos e Códigos} \label{secao:algoritmos_e_codigos}
@@ -87,8 +77,7 @@ Além dos corpos flutuantes convencionais para inserir figuras (\comando{begin\{
  \Until{$r > 0$}
  \Return $n_1$
 \end{algorithmic}
-\caption{Algoritmo para cálculo de máximo divisor comum MDC($n_1$,$n_2$)}
-\label{algoritmo:mdc}
+\caption{Algoritmo para cálculo de máximo divisor comum MDC($n_1$,$n_2$)} \label{algoritmo:mdc}
 \end{algoritmo}
 
 \begin{codigo}[!htb]
