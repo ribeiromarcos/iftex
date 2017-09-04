@@ -1,15 +1,15 @@
-Corpos flutuantes são elementos não textuais como figuras e tabelas que complementam as informações do texto. Neste capítulo são expostos breves exemplos dos corpos flutuantes disponíveis na classe {IFMG\TeX}.
+Corpos flutuantes são elementos não textuais como figuras e tabelas que complementam as informações do texto. Neste capítulo são expostos breves exemplos dos corpos flutuantes disponíveis na classe {IF\TeX}.
 
 Na Seção \ref{secao:figuras} é mostrado como inserir figuras, a Seção \ref{secao:tabelas_e_quadros} explica como incluir tabelas e quadros e a Seção \ref{secao:algoritmos_e_codigos} demostra como trabalhar com algoritmos e códigos fontes.
 
 \section{Figuras}
 \label{secao:figuras}
 
-A inserção de figuras é realizada normalmente através do comando \comando{begin\{figure\}}. A Figura \ref{figura:logomarca_ifmg} exibe a logomarca do IFMG. De acordo com as normas ABNT a lista de figuras é um elemento opcional do documento, para incluí-la é preciso inserir o comando \comando{inserirlistafiguras} antes do início do documento.
+A inserção de figuras é realizada normalmente através do comando \comando{begin\{figure\}}. A Figura \ref{figura:logomarca_if} exibe a logomarca do IF. De acordo com as normas ABNT a lista de figuras é um elemento opcional do documento, para incluí-la é preciso inserir o comando \comando{inserirlistafiguras} antes do início do documento.
 
 \begin{figure}[htb]  \centering
  \iflogo
- \caption{Logomarca do IFMG} \label{figura:logomarca_ifmg}
+ \caption{Logomarca do IF} \label{figura:logomarca_if}
 \end{figure}
 
 \section{Tabelas e Quadros}
@@ -62,7 +62,7 @@ Geany      & Sim             & Não                   \\ \hline
 
 \section{Algoritmos e Códigos} \label{secao:algoritmos_e_codigos}
 
-Além dos corpos flutuantes convencionais para inserir figuras (\comando{begin\{figure\}}) e tabelas (\comando{begin\{figure\}}), a classe {IFMG\TeX} possui mais dois tipos de corpos flutuantes um para algoritmos (\comando{begin\{algoritmo\}}) e outro para códigos (\comando{begin\{codigo\}}). Como exemplo temos o Algoritmo \ref{algoritmo:mdc} que calcula o máximo divisor comum entre dois números e os Códigos \ref{codigo:notas_alunos} e \ref{codigo:metodo_leitura} que são uma consulta na \textit{Structured Query Language (SQL)} e um método em Java que recebe um texto digitado pelo usuário, respectivamente.
+Além dos corpos flutuantes convencionais para inserir figuras (\comando{begin\{figure\}}) e tabelas (\comando{begin\{figure\}}), a classe {IF\TeX} possui mais dois tipos de corpos flutuantes um para algoritmos (\comando{begin\{algoritmo\}}) e outro para códigos (\comando{begin\{codigo\}}). Como exemplo temos o Algoritmo \ref{algoritmo:mdc} que calcula o máximo divisor comum entre dois números e os Códigos \ref{codigo:notas_alunos} e \ref{codigo:metodo_leitura} que são uma consulta na \textit{Structured Query Language (SQL)} e um método em Java que recebe um texto digitado pelo usuário, respectivamente.
 
 \begin{algoritmo}[!htb]
 \begin{algorithmic}[1]

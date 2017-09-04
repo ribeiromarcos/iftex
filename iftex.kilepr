@@ -116,30 +116,30 @@ Mode=LaTeX
 
 [item:anexos/paginas_interessantes.tex]
 archive=true
-column=184
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=3
+line=0
 mode=LaTeX
 open=false
 order=-1
 
 [item:apendices/doc_basico_if.tex]
 archive=true
-column=79
+column=51
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=11
 mode=LaTeX
 open=false
 order=-1
 
 [item:capitulos/ambientes_matematicos.tex]
 archive=true
-column=192
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=22
+line=0
 mode=LaTeX
 open=false
 order=-1
@@ -149,44 +149,44 @@ archive=true
 column=0
 encoding=UTF-8
 highlight=LaTeX
-line=88
+line=0
 mode=LaTeX
 open=false
 order=-1
 
 [item:capitulos/configuracao_pre.tex]
 archive=true
-column=200
+column=10
 encoding=UTF-8
 highlight=LaTeX
-line=30
+line=62
 mode=LaTeX
 open=false
 order=1
 
 [item:capitulos/corpos_flutuantes.tex]
 archive=true
-column=29
+column=201
 encoding=UTF-8
 highlight=LaTeX
-line=11
+line=0
 mode=LaTeX
 open=false
 order=2
 
 [item:capitulos/ferramentas_uteis.tex]
 archive=true
-column=364
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=16
+line=0
 mode=LaTeX
 open=false
 order=-1
 
 [item:capitulos/introducao.tex]
 archive=true
-column=124
+column=132
 encoding=UTF-8
 highlight=LaTeX
 line=7
@@ -226,10 +226,10 @@ order=-1
 
 [item:iftex.cls]
 archive=true
-column=8
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=416
+line=46
 mode=LaTeX
 open=false
 order=1
@@ -246,10 +246,10 @@ order=-1
 
 [item:monografia.tex]
 archive=true
-column=25
+column=7
 encoding=UTF-8
 highlight=LaTeX
-line=14
+line=94
 mode=LaTeX
 open=true
 order=0
@@ -295,52 +295,52 @@ open=false
 order=1
 
 [view-settings,view=0,item:anexos/paginas_interessantes.tex]
-CursorColumn=184
-CursorLine=3
+CursorColumn=0
+CursorLine=0
 JumpList=
-ViMarks=.,0,0,[,0,0,],0,0
+ViMarks=.,3,175,[,3,175,],3,180
 
 [view-settings,view=0,item:apendices/doc_basico_if.tex]
-CursorColumn=79
-CursorLine=1
+CursorColumn=51
+CursorLine=11
 JumpList=
-ViMarks=.,1,78,[,1,76,],1,78
+ViMarks=.,11,51,[,11,51,],11,51
 
 [view-settings,view=0,item:capitulos/ambientes_matematicos.tex]
-CursorColumn=192
-CursorLine=22
+CursorColumn=0
+CursorLine=0
 JumpList=
-ViMarks=.,23,0,[,23,0,],23,0
+ViMarks=.,23,44,[,23,44,],23,49
 
 [view-settings,view=0,item:capitulos/citacoes_referencias.tex]
 CursorColumn=0
-CursorLine=88
+CursorLine=0
 JumpList=
 ViMarks=.,68,65,[,69,0,],-1,-1
 
 [view-settings,view=0,item:capitulos/configuracao_pre.tex]
-CursorColumn=200
-CursorLine=30
+CursorColumn=10
+CursorLine=62
 JumpList=
-ViMarks=.,30,199,[,30,199,],30,199
+ViMarks=.,10,52,[,10,52,],10,52
 
 [view-settings,view=0,item:capitulos/corpos_flutuantes.tex]
-CursorColumn=29
-CursorLine=11
+CursorColumn=201
+CursorLine=0
 JumpList=
-ViMarks=.,11,29,[,11,29,],11,29
+ViMarks=.,7,150,[,7,150,],7,150
 
 [view-settings,view=0,item:capitulos/ferramentas_uteis.tex]
-CursorColumn=364
-CursorLine=16
+CursorColumn=0
+CursorLine=0
 JumpList=
 ViMarks=.,16,357,[,16,357,],16,363
 
 [view-settings,view=0,item:capitulos/introducao.tex]
-CursorColumn=124
+CursorColumn=132
 CursorLine=7
 JumpList=
-ViMarks=.,7,123,[,7,117,],7,123
+ViMarks=.,7,127,[,7,127,],7,131
 
 [view-settings,view=0,item:config.tex]
 CursorColumn=0
@@ -349,16 +349,16 @@ JumpList=
 ViMarks=.,31,0,[,31,0,],31,0
 
 [view-settings,view=0,item:iftex.cls]
-CursorColumn=8
-CursorLine=416
+CursorColumn=0
+CursorLine=46
 JumpList=
-ViMarks=.,416,7,[,416,5,],416,7
+ViMarks=.,46,0,[,46,0,],46,0
 
 [view-settings,view=0,item:monografia.tex]
-CursorColumn=25
-CursorLine=14
+CursorColumn=7
+CursorLine=94
 JumpList=
-ViMarks=.,0,15,[,0,15,],0,15
+ViMarks=.,12,13,[,12,13,],12,13
 
 [view-settings,view=0,item:resumo_abstract.tex]
 CursorColumn=0

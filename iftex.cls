@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{ifmgtex}[2017/01/26 v2.0 Classe IFMG para trabalhos acadêmicos por Marcos Roberto Ribeiro]
+\ProvidesClass{iftex}[2017/01/26 v2.0 Classe IF para trabalhos acadêmicos por Marcos Roberto Ribeiro]
 
 % Repassa demais opções a abntex2
 \DeclareOption*{%
@@ -44,8 +44,6 @@
 % -----------------------------------------------------------------------------
 % Configurações
 % -----------------------------------------------------------------------------
-\newcommand{\ifmg}{Instituto Federal Minas Gerais}%
-\instituicao{\ifmg}%
 
 % Unidade
 \providecommand{\imprimirunidade}{Campus Bambu\'i}%
@@ -106,12 +104,12 @@
 \renewcommand{\coorientador}[2][Coorientador]%
   {\renewcommand{\imprimircoorientador}{#2}%
    \renewcommand{\imprimircoorientadorRotulo}{#1}}%
-\providecommand{\imprimircooriendatorinsituicao}{\ifmg}%
+\providecommand{\imprimircooriendatorinsituicao}{\imprimirinstituicao}%
 \newcommand{\coorientadorinstituicao}[1]{\renewcommand{\imprimircooriendatorinsituicao}{#1}}%
 
 % Preâmbulo
 \preambulo{%
-  {\imprimirtipotrabalho} apresentada ao Curso de {\imprimircurso} do {\ifmg} - {\imprimirunidade}, como requisito parcial para obten\c{c}\~ao do t\'itulo de {\imprimirtitulocurso} em {\imprimircurso}.%
+  {\imprimirtipotrabalho} apresentada ao Curso de {\imprimircurso} do {\imprimirinstituicao} - {\imprimirunidade}, como requisito parcial para obten\c{c}\~ao do t\'itulo de {\imprimirtitulocurso} em {\imprimircurso}.%
 }%
 
 % Citações explícitas
@@ -191,7 +189,7 @@
 }%
 
 % -----------------------------------------------------------------------------
-% Logos do IFMG
+% Logos do IF
 % -----------------------------------------------------------------------------
 % Logo
 \newcommand{\iflogo}{
@@ -319,7 +317,7 @@
       \assinatura{%
         \imprimirorientador\\%
         \imprimirorientadorRotulo\\%
-        \ifmg%
+        \imprimirinstituicao%
       }%
     }{}%
     \par
