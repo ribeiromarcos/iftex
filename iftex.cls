@@ -229,7 +229,7 @@
     \node (if)  [texto, right=of q12.south east, anchor=south west] {\textbf{INSTITUTO FEDERAL}};%
     \node (edu) [texto, right=of q22.south east, anchor=south west] {\textbf{DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA}};%
     \node (mg)  [texto, right=of q32.south east, anchor=south west] {Minas Gerais};%
-    \node (uni) [texto, right=of q42.south east, anchor=south west] {\itshape \imprimirunidade};%
+    \node (uni) [texto, right=of q42.south east, anchor=south west] {\imprimirunidade};%
     \end{tikzpicture}%
   }%
 }%
