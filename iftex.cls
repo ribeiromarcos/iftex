@@ -35,11 +35,14 @@
 
 \RequirePackage{tikz}                 % Pacote para desenho
 \usetikzlibrary{shapes,arrows,matrix,positioning,backgrounds,calc,trees,fit}%
+\RequirePackage{adjustbox}            % Pacote para reduzir/ampliar
 
 % Preserva comando \bibcite alterado pelo pacote abntex2cite
 \let\oldbibcite\bibcite%
-\RequirePackage[alf,abnt-repeated-author-omit=yes]{abntex2cite}    % Citações ABNT
+\RequirePackage[alf,abnt-repeated-author-omit=yes,abnt-title-command=yes
+,abnt-etal-list=0]{abntex2cite}    % Citações ABNT
 \let\bibcite\oldbibcite%
+\newcommand{\bibtextitlecommand}[2]{\textbf{#2}}
 
 % -----------------------------------------------------------------------------
 % Configurações
@@ -192,30 +195,16 @@
 % Logos do IF
 % -----------------------------------------------------------------------------
 % Logo
-\newcommand{\iflogo}{
-\begin{tikzpicture}[node distance=0.1cm]
-\tikzstyle{circulo}=[circle, fill={rgb:red,200;green,25;blue,30}, minimum size=1.1cm]
-\tikzstyle{quadrado}=[rounded corners=0.1cm, fill={rgb:red,50;green,160;blue,65}, minimum size=1cm]
-\node (q12) [quadrado] {};
-\node (q13) [quadrado, right=of q12] {};
-\node (q22) [quadrado, below=of q12] {};
-\node (q21) [quadrado, left=of q22] {};
-\node (q31) [quadrado, below=of q21] {};
-\node (q32) [quadrado, right=of q31] {};
-\node (q33) [quadrado, right=of q32] {};
-\node (q41) [quadrado, below=of q31] {};
-\node (q42) [quadrado, right=of q41] {};
-\node (c) [circulo] at (q12 -| q21) {};
-\end{tikzpicture}
-}
-% Logo com descrição
+% Definição de formas
+\definecolor{ifverde}{RGB}{50,160,65}
+\definecolor{ifvermelho}{RGB}{200,25,30}
+\tikzstyle{circulo}=[circle, fill={ifvermelho}, minimum size=11mm, node distance=1.5mm]%
+\tikzstyle{quadrado}=[rounded corners=1mm, fill={ifverde}, minimum size=10mm]%
+\tikzstyle{texto}=[inner sep=0,outer sep=0,text depth=0pt, node distance=17mm]%
+
 \newcommand{\iffull}{%
-  {%
-    \sffamily\large%
-    \begin{tikzpicture}[node distance=0.05cm]%
-    \tikzstyle{circulo}=[circle, fill={rgb:red,200;green,25;blue,30}, minimum size=.6cm]%
-    \tikzstyle{quadrado}=[rounded corners=0.05cm, fill={rgb:red,50;green,160;blue,65}, minimum size=0.5cm, ,inner sep=0,outer sep=0,text depth=0pt]%
-    \tikzstyle{texto}=[inner sep=0,outer sep=0,text depth=0pt, node distance=0.65cm]%
+  {\sffamily%
+  \begin{tikzpicture}[baseline,node distance=2mm]%
     \node (q12) [quadrado] {};%
     \node (q13) [quadrado, right=of q12] {};%
     \node (q22) [quadrado, below=of q12] {};%
@@ -225,14 +214,29 @@
     \node (q33) [quadrado, right=of q32] {};%
     \node (q41) [quadrado, below=of q31] {};%
     \node (q42) [quadrado, right=of q41] {};%
-    \node (c)   [circulo] at (q12 -| q21) {};%
-    \node (if)  [texto, right=of q12.south east, anchor=south west] {\textbf{INSTITUTO FEDERAL}};%
-    \node (edu) [texto, right=of q22.south east, anchor=south west] {\textbf{DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA}};%
-    \node (mg)  [texto, right=of q32.south east, anchor=south west] {Minas Gerais};%
-    \node (uni) [texto, right=of q42.south east, anchor=south west] {\imprimirunidade};%
+    \node (c)   [circulo, left=of q12] {};%
+    \node (if)  [texto, right=of q12.east, anchor=west] {\fontsize{13mm}{13mm}\selectfont \bfseries INSTITUTO FEDERAL};%
+    \node (edu) [texto, right=of q22.east, anchor=west] {\fontsize{13mm}{13mm}\selectfont \bfseries DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA};%
+    \node (mg)  [texto, right=of q32.south east, anchor=south west] {\fontsize{10mm}{10mm}\selectfont Minas Gerais};%
+    \node (uni) [texto, right=of q42.south east, anchor=south west] {\fontsize{10mm}{10mm}\selectfont \imprimirunidade};%
     \end{tikzpicture}%
   }%
 }%
+
+\newcommand{\iflogo}{%
+  \begin{tikzpicture}[baseline,node distance=2mm]%
+    \node (q12) [quadrado] {};%
+    \node (q13) [quadrado, right=of q12] {};%
+    \node (q22) [quadrado, below=of q12] {};%
+    \node (q21) [quadrado, left=of q22] {};%
+    \node (q31) [quadrado, below=of q21] {};%
+    \node (q32) [quadrado, right=of q31] {};%
+    \node (q33) [quadrado, right=of q32] {};%
+    \node (q41) [quadrado, below=of q31] {};%
+    \node (q42) [quadrado, right=of q41] {};%
+    \node (c) [circulo, left=of q12] {};%
+  \end{tikzpicture}%
+}
 
 % -----------------------------------------------------------------------------
 % Ajuste de cabeçalho e rodapé
@@ -364,7 +368,7 @@
   \thispagestyle{empty}%
   \noindent%
   \begin{center}
-    \iffull%
+    {\adjustbox{scale=0.45}{\iffull}}%
     \vfill%
     {\Large{\textbf{\MakeUppercase{\imprimirtitulo}}}}%
     \vfill%
