@@ -1,0 +1,333 @@
+[General]
+kile_livePreviewEnabled=true
+kile_livePreviewStatusUserSpecified=false
+kile_livePreviewTool=LivePreview-PDFLaTeX
+lastDocument=capitulos/introducao.tex
+
+[document-settings,item:anexos/paginas_interessantes.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:apendices/doc_basico_if.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/ambientes_matematicos.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/citacoes_referencias.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/configuracao_pre.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/corpos_flutuantes.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/ferramentas_uteis.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:capitulos/introducao.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:config.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:iftex.cls]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:iftex.kilepr]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=None
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=Normal
+Mode Set By User=false
+
+[document-settings,item:monografia.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:referencias.bib]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=BibTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=BibTeX
+Mode Set By User=false
+
+[document-settings,item:resumo_abstract.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:siglas.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[document-settings,item:simbolos.tex]
+Bookmarks=
+Encoding=UTF-8
+Highlighting=LaTeX
+Highlighting Set By User=false
+Indentation Mode=normal
+Mode=LaTeX
+Mode Set By User=false
+
+[item:anexos/paginas_interessantes.tex]
+open=true
+order=5
+
+[item:apendices/doc_basico_if.tex]
+open=true
+order=2
+
+[item:capitulos/ambientes_matematicos.tex]
+open=true
+order=10
+
+[item:capitulos/citacoes_referencias.tex]
+open=true
+order=9
+
+[item:capitulos/configuracao_pre.tex]
+open=true
+order=11
+
+[item:capitulos/corpos_flutuantes.tex]
+open=true
+order=14
+
+[item:capitulos/ferramentas_uteis.tex]
+open=true
+order=0
+
+[item:capitulos/introducao.tex]
+open=true
+order=15
+
+[item:config.tex]
+open=true
+order=7
+
+[item:ficha_catalografica.pdf]
+open=false
+order=-1
+
+[item:folha_aprovacao.pdf]
+open=false
+order=-1
+
+[item:iftex.cls]
+open=true
+order=8
+
+[item:iftex.kilepr]
+open=true
+order=3
+
+[item:monografia.tex]
+open=true
+order=12
+
+[item:referencias.bib]
+open=true
+order=6
+
+[item:resumo_abstract.tex]
+open=true
+order=1
+
+[item:siglas.tex]
+open=true
+order=13
+
+[item:simbolos.tex]
+open=true
+order=4
+
+[view-settings,view=0,item:anexos/paginas_interessantes.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:apendices/doc_basico_if.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/ambientes_matematicos.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/citacoes_referencias.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/configuracao_pre.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/corpos_flutuantes.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/ferramentas_uteis.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:capitulos/introducao.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:config.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:iftex.cls]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:iftex.kilepr]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:monografia.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:referencias.bib]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:resumo_abstract.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:siglas.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
+
+[view-settings,view=0,item:simbolos.tex]
+CursorColumn=0
+CursorLine=0
+JumpList=
+TextFolding=[]
+ViMarks=
