@@ -203,7 +203,7 @@
 \tikzstyle{texto}=[inner sep=0,outer sep=0,text depth=0pt, node distance=17mm]%
 
 \newcommand{\iffull}{%
-  {\sffamily%
+  {\fontfamily{fos}\selectfont%
   \begin{tikzpicture}[baseline,node distance=2mm]%
     \node (q12) [quadrado] {};%
     \node (q13) [quadrado, right=of q12] {};%

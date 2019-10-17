@@ -149,39 +149,39 @@ Mode=LaTeX
 Mode Set By User=false
 
 [item:anexos/paginas_interessantes.tex]
-open=true
+open=false
 order=5
 
 [item:apendices/doc_basico_if.tex]
-open=true
+open=false
 order=2
 
 [item:capitulos/ambientes_matematicos.tex]
-open=true
+open=false
 order=10
 
 [item:capitulos/citacoes_referencias.tex]
-open=true
+open=false
 order=9
 
 [item:capitulos/configuracao_pre.tex]
-open=true
+open=false
 order=11
 
 [item:capitulos/corpos_flutuantes.tex]
-open=true
+open=false
 order=14
 
 [item:capitulos/ferramentas_uteis.tex]
-open=true
+open=false
 order=0
 
 [item:capitulos/introducao.tex]
-open=true
+open=false
 order=15
 
 [item:config.tex]
-open=true
+open=false
 order=7
 
 [item:ficha_catalografica.pdf]
@@ -193,31 +193,31 @@ open=false
 order=-1
 
 [item:iftex.cls]
-open=true
+open=false
 order=8
 
 [item:iftex.kilepr]
-open=true
+open=false
 order=3
 
 [item:monografia.tex]
-open=true
+open=false
 order=12
 
 [item:referencias.bib]
-open=true
+open=false
 order=6
 
 [item:resumo_abstract.tex]
-open=true
+open=false
 order=1
 
 [item:siglas.tex]
-open=true
+open=false
 order=13
 
 [item:simbolos.tex]
-open=true
+open=false
 order=4
 
 [view-settings,view=0,item:anexos/paginas_interessantes.tex]
@@ -270,8 +270,8 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:capitulos/introducao.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=137
+CursorLine=7
 JumpList=
 TextFolding=[]
 ViMarks=
