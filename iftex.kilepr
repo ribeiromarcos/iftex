@@ -1,12 +1,12 @@
 [General]
 bib_extensions=.bib
-bibliographyBackendAutoDetected=
+bibliographyBackendAutoDetected=Biber
 bibliographyBackendUserOverride=
 def_graphic_ext=pdf
 img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=3
-kileversion=2.9.91
+kileversion=2.9.92
 masterDocument=
 name=IFTex
 pkg_extIsRegExp=false

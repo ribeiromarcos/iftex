@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{iftex}[2017/01/26 v2.0 Classe IF para trabalhos acadêmicos por Marcos Roberto Ribeiro]
+\ProvidesClass{iftex}[2017/01/26 v2.0 Classe IF para trabalhos academicos por Marcos Roberto Ribeiro]
 
 % Repassa demais opções a abntex2
 \DeclareOption*{%
@@ -31,18 +31,13 @@
 \RequirePackage{amssymb,amsthm}       % Pacotes matemáticos
 \RequirePackage{url}                  % Tratamento correto de URL
 \RequirePackage{enumerate}            % Listas numerados personalizadas
+%\RequirePackage{paralist}            % Listas numerados personalizadas
 \RequirePackage{cleveref}             % Correção de links para sub-equações
 
 \RequirePackage{tikz}                 % Pacote para desenho
 \usetikzlibrary{shapes,arrows,matrix,positioning,backgrounds,calc,trees,fit}%
-\RequirePackage{adjustbox}            % Pacote para reduzir/ampliar
 
-% Preserva comando \bibcite alterado pelo pacote abntex2cite
-\let\oldbibcite\bibcite%
-\RequirePackage[alf,abnt-repeated-author-omit=yes,abnt-title-command=yes
-,abnt-etal-list=0]{abntex2cite}    % Citações ABNT
-\let\bibcite\oldbibcite%
-\newcommand{\bibtextitlecommand}[2]{\textbf{#2}}
+\RequirePackage[style=abnt,giveninits, uniquename=init,noslsn,alldates=short,backend=biber]{biblatex}              % Referências bibliográficas
 
 % -----------------------------------------------------------------------------
 % Configurações
@@ -115,8 +110,18 @@
   {\imprimirtipotrabalho} apresentada ao Curso de {\imprimircurso} do {\imprimirinstituicao} - {\imprimirunidade}, como requisito parcial para obten\c{c}\~ao do t\'itulo de {\imprimirtitulocurso} em {\imprimircurso}.%
 }%
 
+% -----------------------------------------------------------------------------
+% Referências
+% -----------------------------------------------------------------------------
+
 % Citações explícitas
-\newcommand{\citet}{\citeonline}%
+\newcommand{\citet}{\textcite}%
+
+% Modificação das referências
+\defbibheading{bibliography}[REFERÊNCIAS]{%
+ \chapter*{#1}%
+ \addcontentsline{toc}{chapter}{#1}%
+}%
 
 % -----------------------------------------------------------------------------
 % Fonte padrão section, subsection e subsubsection
@@ -195,16 +200,30 @@
 % Logos do IF
 % -----------------------------------------------------------------------------
 % Logo
-% Definição de formas
-\definecolor{ifverde}{RGB}{50,160,65}
-\definecolor{ifvermelho}{RGB}{200,25,30}
-\tikzstyle{circulo}=[circle, fill={ifvermelho}, minimum size=11mm, node distance=1.5mm]%
-\tikzstyle{quadrado}=[rounded corners=1mm, fill={ifverde}, minimum size=10mm]%
-\tikzstyle{texto}=[inner sep=0,outer sep=0,text depth=0pt, node distance=17mm]%
-
+\newcommand{\iflogo}{
+\begin{tikzpicture}[node distance=0.1cm]
+\tikzstyle{circulo}=[circle, fill={rgb:red,200;green,25;blue,30}, minimum size=1.1cm]
+\tikzstyle{quadrado}=[rounded corners=0.1cm, fill={rgb:red,50;green,160;blue,65}, minimum size=1cm]
+\node (q12) [quadrado] {};
+\node (q13) [quadrado, right=of q12] {};
+\node (q22) [quadrado, below=of q12] {};
+\node (q21) [quadrado, left=of q22] {};
+\node (q31) [quadrado, below=of q21] {};
+\node (q32) [quadrado, right=of q31] {};
+\node (q33) [quadrado, right=of q32] {};
+\node (q41) [quadrado, below=of q31] {};
+\node (q42) [quadrado, right=of q41] {};
+\node (c) [circulo] at (q12 -| q21) {};
+\end{tikzpicture}
+}
+% Logo com descrição
 \newcommand{\iffull}{%
-  {\fontfamily{fos}\selectfont%
-  \begin{tikzpicture}[baseline,node distance=2mm]%
+  {%
+    \sffamily\large%
+    \begin{tikzpicture}[node distance=0.05cm]%
+    \tikzstyle{circulo}=[circle, fill={rgb:red,200;green,25;blue,30}, minimum size=.6cm]%
+    \tikzstyle{quadrado}=[rounded corners=0.05cm, fill={rgb:red,50;green,160;blue,65}, minimum size=0.5cm, ,inner sep=0,outer sep=0,text depth=0pt]%
+    \tikzstyle{texto}=[inner sep=0,outer sep=0,text depth=0pt, node distance=0.65cm]%
     \node (q12) [quadrado] {};%
     \node (q13) [quadrado, right=of q12] {};%
     \node (q22) [quadrado, below=of q12] {};%
@@ -214,29 +233,14 @@
     \node (q33) [quadrado, right=of q32] {};%
     \node (q41) [quadrado, below=of q31] {};%
     \node (q42) [quadrado, right=of q41] {};%
-    \node (c)   [circulo, left=of q12] {};%
-    \node (if)  [texto, right=of q12.east, anchor=west] {\fontsize{13mm}{13mm}\selectfont \bfseries INSTITUTO FEDERAL};%
-    \node (edu) [texto, right=of q22.east, anchor=west] {\fontsize{13mm}{13mm}\selectfont \bfseries DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA};%
-    \node (mg)  [texto, right=of q32.south east, anchor=south west] {\fontsize{10mm}{10mm}\selectfont Minas Gerais};%
-    \node (uni) [texto, right=of q42.south east, anchor=south west] {\fontsize{10mm}{10mm}\selectfont \imprimirunidade};%
+    \node (c)   [circulo] at (q12 -| q21) {};%
+    \node (if)  [texto, right=of q12.south east, anchor=south west] {\textbf{INSTITUTO FEDERAL}};%
+    \node (edu) [texto, right=of q22.south east, anchor=south west] {\textbf{DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA}};%
+    \node (mg)  [texto, right=of q32.south east, anchor=south west] {Minas Gerais};%
+    \node (uni) [texto, right=of q42.south east, anchor=south west] {\imprimirunidade};%
     \end{tikzpicture}%
   }%
 }%
-
-\newcommand{\iflogo}{%
-  \begin{tikzpicture}[baseline,node distance=2mm]%
-    \node (q12) [quadrado] {};%
-    \node (q13) [quadrado, right=of q12] {};%
-    \node (q22) [quadrado, below=of q12] {};%
-    \node (q21) [quadrado, left=of q22] {};%
-    \node (q31) [quadrado, below=of q21] {};%
-    \node (q32) [quadrado, right=of q31] {};%
-    \node (q33) [quadrado, right=of q32] {};%
-    \node (q41) [quadrado, below=of q31] {};%
-    \node (q42) [quadrado, right=of q41] {};%
-    \node (c) [circulo, left=of q12] {};%
-  \end{tikzpicture}%
-}
 
 % -----------------------------------------------------------------------------
 % Ajuste de cabeçalho e rodapé
@@ -368,7 +372,7 @@
   \thispagestyle{empty}%
   \noindent%
   \begin{center}
-    {\adjustbox{scale=0.45}{\iffull}}%
+    \iffull%
     \vfill%
     {\Large{\textbf{\MakeUppercase{\imprimirtitulo}}}}%
     \vfill%
@@ -412,11 +416,11 @@
   \ifthenelse{\not\equal{\arquivoficha}{}}%
   {%
     \imprimirfolhaderosto*{}%
-    \if@twoside{%
+    % \if@twoside{%
       \begin{fichacatalografica}%
         \includepdf[pages={1}]{\arquivoficha}%
       \end{fichacatalografica}%
-    }\fi%
+    % }\fi%
   }%
   {%
     \imprimirfolhaderosto{}%
@@ -492,6 +496,7 @@
 \newcommand{\geraresumo}{%
   \ifthenelse{\not\equal{\textoresumo}{}}{%
     \pretextualchapter{Resumo}%
+    \noindent%
     \textoresumo%
     \par%
     \vspace{\onelineskip}%
@@ -516,6 +521,7 @@
 \newcommand{\geraabstract}{%
   \ifthenelse{\not\equal{\textoabstract}{}}{%
     \pretextualchapter{Abstract}%
+    \noindent%
     \textoabstract%
     \par%
     \vspace{\onelineskip}%
@@ -589,6 +595,7 @@
     \cleardoublepage%
   }{}%
 }
+
 
 % -----------------------------------------------------------------------------
 % Lista de siglas
@@ -746,6 +753,7 @@
 
 % -----------------------------------------------------------------------------
 % Ambiente baseados em teoremas
+
 % -----------------------------------------------------------------------------
 \theoremstyle{definition}%
 \newtheorem{corolario}{Corolário}%

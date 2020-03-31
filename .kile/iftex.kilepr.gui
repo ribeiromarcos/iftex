@@ -2,7 +2,7 @@
 kile_livePreviewEnabled=true
 kile_livePreviewStatusUserSpecified=false
 kile_livePreviewTool=LivePreview-PDFLaTeX
-lastDocument=capitulos/introducao.tex
+lastDocument=monografia.tex
 
 [document-settings,item:anexos/paginas_interessantes.tex]
 Bookmarks=
@@ -194,19 +194,19 @@ order=-1
 
 [item:iftex.cls]
 open=false
-order=8
+order=1
 
 [item:iftex.kilepr]
 open=false
 order=3
 
 [item:monografia.tex]
-open=false
-order=12
+open=true
+order=0
 
 [item:referencias.bib]
-open=false
-order=6
+open=true
+order=1
 
 [item:resumo_abstract.tex]
 open=false
@@ -244,6 +244,7 @@ ViMarks=
 [view-settings,view=0,item:capitulos/citacoes_referencias.tex]
 CursorColumn=0
 CursorLine=0
+Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
 ViMarks=
@@ -256,11 +257,12 @@ TextFolding=[]
 ViMarks=
 
 [view-settings,view=0,item:capitulos/corpos_flutuantes.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=21
+CursorLine=48
+Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
-ViMarks=
+ViMarks=.,48,16,[,48,16,],48,20
 
 [view-settings,view=0,item:capitulos/ferramentas_uteis.tex]
 CursorColumn=0
@@ -285,10 +287,11 @@ ViMarks=
 
 [view-settings,view=0,item:iftex.cls]
 CursorColumn=0
-CursorLine=0
+CursorLine=120
+Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
-ViMarks=
+ViMarks=.,120,0,[,120,0,],120,0
 
 [view-settings,view=0,item:iftex.kilepr]
 CursorColumn=0
@@ -299,17 +302,19 @@ ViMarks=
 
 [view-settings,view=0,item:monografia.tex]
 CursorColumn=0
-CursorLine=0
+CursorLine=124
+Dynamic Word Wrap=false
 JumpList=
 TextFolding=[]
-ViMarks=
+ViMarks=.,139,0,[,139,0,],139,0
 
 [view-settings,view=0,item:referencias.bib]
-CursorColumn=0
-CursorLine=0
+CursorColumn=1
+CursorLine=120
+Dynamic Word Wrap=true
 JumpList=
 TextFolding=[]
-ViMarks=
+ViMarks=.,57,24,[,58,0,],58,31
 
 [view-settings,view=0,item:resumo_abstract.tex]
 CursorColumn=0
